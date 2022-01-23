@@ -26,6 +26,10 @@ a {
     transition: color 0.3s ease-in-out;
 }
 
+button {
+    transition: 0.3s ease-in-out;
+}
+
 /* Navbar CSS Start */
 
 .navbar-brand {
@@ -39,3 +43,25 @@ a {
 .navbar-brand:hover,.nav-link:hover {
     color: var(--primary-color) !important;
 }
+
+/* Navbar CSS End */
+
+/* Hero Slider CSS Start */
+
+.slider-title {
+    font-size: 48px;
+    font-weight: 600;
+}
+.slider-text {
+    font-weight: 300;
+}
+.slider-btn {
+    padding: 10px 43px;
+    margin-bottom: 42px;
+}
+.slider-btn:hover {
+    background: var(--primary-color) !important;
+    color: #fff;
+}
+
+/* Hero Slider CSS End */
