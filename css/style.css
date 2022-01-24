@@ -65,6 +65,9 @@ button {
 
 /* Navbar CSS Start */
 
+.navbar {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
 .navbar-brand {
     font-size: 22px;
     font-weight: 700;
@@ -81,6 +84,27 @@ button {
 
 /* Hero Slider CSS Start */
 
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100vh;
+}
+.slide-1,
+.slide-2,
+.slide-3 {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slide-1 {
+    background-image: url(../images/banner.png);
+}
+.slide-2 {
+    background-image: url(../images/banner-2.png);
+}
+.slide-3 {
+    background-image: url(../images/banner-3.png);
+}
 .slider-title {
     font-size: 48px;
     font-weight: 600;

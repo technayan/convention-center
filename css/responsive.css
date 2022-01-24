@@ -1,0 +1,62 @@
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* Reset Responsive CSS Start */
+    .section-title {
+        font-size: 19px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    /* Reset Responsive CSS End */
+
+    /* Hero Slider Responsive CSS Start */
+    .slider-title {
+        font-size: 24px;
+    }
+    .hot {
+        transform: translateY(0);
+    }
+    /* Hero Slider Responsive CSS End */
+
+    /* About Us Responsive CSS Start */
+    .about-us-section {
+        padding: 25px 0;
+    }
+    .about-title {
+        font-size: 19px;
+        line-height: 60px;
+        font-weight: 500;
+    }
+    .about-desc {
+        font-size: 15px;
+    }
+    /* About Us Responsive CSS End */
+
+    /* Our Package Section Responsive CSS Start */
+    .our-package-section {
+        padding: 25px 0;
+    }
+    .card {
+        padding: 0;
+    }
+    .card:hover {
+        transform: translateY(0);
+    }
+    .card:hover,
+    .hot {
+    box-shadow: 0px 15px 34px rgba(63, 135, 245, 0.25);
+    }
+    /* Our Package Section Responsive CSS End */
+
+    /* FAQ Section Responsive CSS Start */
+    .faq-section {
+        padding: 25px 0;
+    }
+    /* FAQ Section Responsive CSS End */
+
+    /* Footer Section Responsive CSS Start */
+    .footer-section {
+        padding: 25px 0;
+    }
+    /* Footer Section Responsive CSS End */
+
+ }
