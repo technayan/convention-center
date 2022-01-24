@@ -1,11 +1,13 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
 
 /* Root Variables */
 :root {
     --primary-color: #3f87f5;
-    --heading-color: #0a0826;
+    --title-color: #0a0826;
     --gray-color: #6c6c6c;
+    --card-title-color: #231d4f;
+    --card-text-color: #848199;
 }
 
 
@@ -28,6 +30,11 @@ a {
     transition: color 0.3s ease-in-out;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 button {
     transition: 0.3s ease-in-out;
 }
@@ -37,13 +44,23 @@ button {
     background: var(--primary-color);
     margin-top: 20px;
 }
+
 .primary-btn .arrow {
     position: absolute;
     transform: translateX(5px);
     transition: transform 0.3s ease-in-out;
 }
+
 .primary-btn:hover .arrow {
     transform: translateX(10px);
+}
+
+.section-title {
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: 600;
+    color: var(--title-color);
+    margin-bottom: 100px;
 }
 
 /* Navbar CSS Start */
@@ -100,10 +117,93 @@ button {
 .about-title {
     font-size: 38px;
     line-height: 60px;
-    color: var(--heading-color);
+    color: var(--title-color);
 }
 .about-desc {
     color: var(--gray-color);
 }
 
 /* About Us Section CSS End */
+
+/* Our Package Section CSS Start */
+
+.our-package-section {
+    padding: 50px 0;
+}
+.card {
+    padding: 5px;
+    border-radius: 26px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.package-price {
+    font-size: 36px;
+    line-height: 46px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--card-title-color);
+}
+.package-name {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--card-title-color);
+}
+.package-desc {
+    color: var(--card-text-color);
+}
+.package-item {
+    color: var(--card-text-color);
+}
+.package-item .check {
+    padding: 3px;
+    color: #5243c2;
+    background: rgba(82, 67, 194, 0.1);
+    border-radius: 50%;
+}
+.package-btn {
+    padding: 10px 30px;
+    background: rgba(244, 150, 210, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+    border-radius: 24px;
+}
+.card:hover {
+    background: var(--primary-color);
+    transform: translateY(-30px);
+    color: #fff !important;
+}
+.card:hover .package-price,
+.card:hover .package-name,
+.card:hover .package-desc, 
+.card:hover .package-item {
+    color: #fff;
+}
+.card:hover .package-btn {
+    background: #fff;
+}
+.hot {
+    background: var(--primary-color);
+    transform: translateY(-30px);
+}
+.hot .package-price,
+.hot .package-name,
+.hot .package-desc, 
+.hot .package-item {
+    color: #fff;
+}
+.card:hover .check,
+.hot .check {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.hot .package-btn {
+    background: #fff;
+}
+
+.package-btn:hover {
+    color: #fff;
+    background: transparent !important;
+    border:1px solid #fff;
+}
+
+
+/* Our Package Section CSS End */
