@@ -103,6 +103,18 @@ button {
 
 .about-us-section {
     padding: 100px 0 50px;
+    position: relative;
+}
+.toast {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-weight: 500;
+    border-left: 10px solid var(--primary-color);
+}
+.toast i {
+    color: var(--primary-color);
+    font-size: 20px;
 }
 .about-img-wrapper {
     border-radius: 5px;
@@ -166,11 +178,7 @@ button {
     color: var(--primary-color);
     border-radius: 24px;
 }
-.card:hover {
-    background: var(--primary-color);
-    transform: translateY(-30px);
-    color: #fff !important;
-}
+
 .card:hover .package-price,
 .card:hover .package-name,
 .card:hover .package-desc, 
@@ -180,9 +188,11 @@ button {
 .card:hover .package-btn {
     background: #fff;
 }
+.card:hover,
 .hot {
     background: var(--primary-color);
     transform: translateY(-30px);
+    box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
 }
 .hot .package-price,
 .hot .package-name,
@@ -205,5 +215,38 @@ button {
     border:1px solid #fff;
 }
 
-
 /* Our Package Section CSS End */
+
+/* FAQ Section CSS Start */
+
+.faq-section {
+    padding: 50px 0;
+}
+.accordion-item {
+    border: 1px solid #d5e5fb !important;
+}
+.accordion-button:not(.collapsed) {
+    color: #383838;
+    background: none;
+    box-shadow: none;
+}
+.question {
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+}
+.answer {
+    color: #7e848c;
+}
+.faq-img-wrapper {
+    overflow: hidden;
+    border-radius: 5px;
+}
+.faq-img {
+    transition: 0.3s ease-in-out;
+}
+.faq-img:hover {
+    transform: scale(1.1);
+}
+
+/* FAQ Section CSS End */
