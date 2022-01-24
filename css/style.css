@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
 
 /* Root Variables */
 :root {
@@ -220,7 +220,7 @@ button {
 /* FAQ Section CSS Start */
 
 .faq-section {
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 .accordion-item {
     border: 1px solid #d5e5fb !important;
@@ -250,3 +250,23 @@ button {
 }
 
 /* FAQ Section CSS End */
+
+/* Footer CSS Start */
+.footer-section {
+    padding: 80px 0;
+    background: #0b0d17;
+}
+.copyright-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+.footer-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.app-link img {
+    width: 135px;
+}
+/* Footer CSS End */
