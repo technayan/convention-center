@@ -4,6 +4,8 @@
 /* Root Variables */
 :root {
     --primary-color: #3f87f5;
+    --heading-color: #0a0826;
+    --gray-color: #6c6c6c;
 }
 
 
@@ -28,6 +30,20 @@ a {
 
 button {
     transition: 0.3s ease-in-out;
+}
+
+.primary-btn {
+    padding: 10px 35px 10px 24px;
+    background: var(--primary-color);
+    margin-top: 20px;
+}
+.primary-btn .arrow {
+    position: absolute;
+    transform: translateX(5px);
+    transition: transform 0.3s ease-in-out;
+}
+.primary-btn:hover .arrow {
+    transform: translateX(10px);
 }
 
 /* Navbar CSS Start */
@@ -65,3 +81,29 @@ button {
 }
 
 /* Hero Slider CSS End */
+
+/* About Us Section CSS Start */
+
+.about-us-section {
+    padding: 100px 0 50px;
+}
+.about-img-wrapper {
+    border-radius: 5px;
+    overflow: hidden;
+}
+.about-img {
+    transition: transform 0.3s ease-in-out;
+}
+.about-img:hover {
+    transform: scale(1.1);
+}
+.about-title {
+    font-size: 38px;
+    line-height: 60px;
+    color: var(--heading-color);
+}
+.about-desc {
+    color: var(--gray-color);
+}
+
+/* About Us Section CSS End */
